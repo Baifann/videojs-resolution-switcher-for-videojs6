@@ -1,6 +1,7 @@
 # videojs-custom
 
 > A Vue.js project
+> A demo for videojs resolution switcher with videojs6
 
 ## Build Setup
 
