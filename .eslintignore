@@ -1,0 +1,9 @@
+/build/
+/config/
+/dist/
+/*.js
+/src/main.js
+/src/util/videojs-resolution-switcher.js
+/src/util/video.min.js
+/src/js/videojs-resolution-switcher.js
+/src/components/VideoView.vue
