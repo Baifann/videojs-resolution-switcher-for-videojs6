@@ -11,7 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "video.js": "^5.20.4",
+    "video.js": "^6.5.2",
     "videojs-resolution-switcher": "^0.4.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",

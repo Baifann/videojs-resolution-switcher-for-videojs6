@@ -9,7 +9,7 @@
 
 import videoJsResolutionSwitcher from "@/util/videojs-resolution-switcher.js";
 import videojs from "video.js";
-// import videoJsResolutionSwitcher from "@/src/js/videojs-resolution-switcher.js";
+// import videoJsResolutionSwitcher from "@/js/videojs-resolution-switcher.js";
 // import videojs from "@/util/video.min.js";
 
 export default {
@@ -70,7 +70,7 @@ export default {
               res: 360
             },
             {
-              src: "https://dqdvideofile.qnssl.com/PrtpTmKE_4479976251.mp4?sign=f95551d13e8bfe7d410733f40cea96a1&t=5b0143d5",
+              src: "https://vjs.zencdn.net/v/oceans.mp4?HD",
               type: "video/mp4",
               label: "HD",
               res: 720

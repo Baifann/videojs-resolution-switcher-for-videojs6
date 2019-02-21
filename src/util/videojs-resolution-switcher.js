@@ -68,6 +68,8 @@
           this.el().appendChild(staticLabel);
         }
         player.on('updateSources', videojs.bind( this, this.update ) );
+        // resolutionchange
+        player.on('resolutionchange', videojs.bind( this, this.update ) );
       }
     } );
     ResolutionMenuButton.prototype.createItems = function(){
@@ -90,6 +92,7 @@
       return menuItems;
     };
     ResolutionMenuButton.prototype.update = function(){
+      console.log('update!!!');
       this.sources = this.player_.getGroupedSrc();
       this.currentSelection = this.player_.currentResolution();
       this.label.innerHTML = this.currentSelection ? this.currentSelection.label : '';
@@ -183,7 +186,7 @@
             player.handleTechSeeked_();
             if(!isPaused){
               // Start playing and hide loadingSpinner (flash issue ?)
-              player.play().handleTechSeeked_();
+              player.handleTechSeeked_();
             }
             player.trigger('resolutionchange');
           });
